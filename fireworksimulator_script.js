@@ -14,7 +14,7 @@ const IS_HIGH_END_DEVICE = (() => {
 	if (!hwConcurrency) {
 		return false;
 	}
-	// Large screens indicate a full size computer, which often have hyper threading these days.
+	// Large screens indicate a full size computer, which often have hyper threadin发g these days.
 	// So a quad core desktop machine has 8 cores. We'll place a higher min threshold there.
 	const minCount = window.innerWidth <= 1024 ? 4 : 8;
 	return hwConcurrency >= minCount;
@@ -24,7 +24,7 @@ const IS_HIGH_END_DEVICE = (() => {
 const MAX_WIDTH = 7680;
 const MAX_HEIGHT = 4320;
 const GRAVITY = 0.9; // Acceleration in px/s
-let simSpeed = 2;
+let simSpeed = 3;
 
 function getDefaultScaleFactor() {
 	if (IS_MOBILE) return 0.9;
