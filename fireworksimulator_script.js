@@ -1067,7 +1067,7 @@ const sequences = [
 
 
 let isFirstSeq = true;
-const finaleCount = 32;
+const finaleCount = 48;
 let currentFinaleCount = 0;
 function startSequence() {
 	if (isFirstSeq) {
